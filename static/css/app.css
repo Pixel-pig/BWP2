@@ -1,0 +1,96 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Lucida Grande", "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", STHeiti, "Microsoft YaHei", "WenQuanYi Micro Hei", "Noto Sans CJK SC", "Source Han Sans CN", SimSun, sans-serif;
+}
+
+input,
+button,
+textarea,
+select {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+a {
+    color: #3b8bba;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #265778;
+}
+
+#nav {
+    background: #222;
+}
+
+#nav.translucent {
+    background: none;
+}
+
+#nav a {
+    color: #ddd;
+    text-decoration: none;
+    padding: .5em;
+    display: inline-block;
+}
+
+#nav a:hover {
+    color: #eee;
+}
+
+#nav .c7sky-ribbon {
+    position: absolute;
+    right: 10px;
+    top: -3px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='56'%3E%3Cdefs%3E%3ClinearGradient id='a' x2='0' y2='56' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2300bcd4'/%3E%3Cstop offset='1' stop-color='%23008ba3'/%3E%3C/linearGradient%3E%3Cfilter id='b'%3E%3CfeOffset in='SourceAlpha' dy='1'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='linear' slope='.2'/%3E%3C/feComponentTransfer%3E%3CfeBlend in='SourceGraphic'/%3E%3C/filter%3E%3C/defs%3E%3Cpath fill='url(%23a)' d='M0 0v56l18-10 18 10V0H0z'/%3E%3Cpath d='M30 12l-2.57 14.4a11.26 11.26 0 0 1-7.13 8c3.46-5.69 4.36-18.4 4.36-18.4h-7.82c-3.62 0-6.5 3.66-6.5 7.47s3.1 7.22 7 6.88a17.43 17.43 0 0 1-1.82 4.51A11.27 11.27 0 0 1 6 23.47C6 17.13 10.88 12 16.89 12z' fill='%23fff' filter='url(%23b)'/%3E%3C/svg%3E");
+    overflow: hidden;
+    width: 36px;
+    height: 56px;
+    padding: 0;
+    border-top: 3px solid #00bcd4;
+    -webkit-transition: top .3s;
+    -moz-transition: top .3s;
+    transition: top .3s;
+}
+
+#nav .c7sky-ribbon:hover {
+    top: 0;
+}
+
+#header,
+#main {
+    margin: 0 auto;
+    max-width: 768px;
+}
+
+#header {
+    margin: 2em auto;
+    padding: 1em 0 2em;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#header h1 {
+    margin: 0;
+    color: #444;
+    font-weight: 300;
+    font-size: 300%;
+}
+
+#header h2 {
+    margin: 0;
+    color: #666;
+    font-weight: 300;
+    font-size: 125%;
+}
+
+#main {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.adsbygoogle {
+    display: block !important;
+    margin: 50px auto;
+}

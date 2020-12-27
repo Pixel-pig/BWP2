@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>随机密码生成器 - 随机字符串生成器 - Random Password Generator | 小影的工具箱</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="description" content="随机密码生成器 - 随机字符串生成器 - Random Password Generator">
+
+    <link rel="stylesheet" href="/static/css/pure-min.css">
+    <link rel="stylesheet" href="/static/css/app.css">
+    <script src="/static/js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+
+    <style>
+        #main {
+            max-width: 400px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            border-top: 1px solid #eee;
+            list-style: none;
+            font-size: 14px;
+        }
+
+        li {
+            clear: both;
+            overflow: hidden;
+            padding: .5em 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .pure-form label {
+            display: block;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        .pure-form span {
+            float: left;
+            margin: 6px 0;
+        }
+
+        input {
+            float: right;
+            margin-top: 9px;
+        }
+
+        #special_characters,
+        #exclude_characters,
+        #password_length,
+        #password_quantity {
+            margin-top: 0;
+            width: 5em;
+            text-align: right;
+        }
+
+        #special_characters,
+        #exclude_characters {
+            width: 60%;
+        }
+
+        #generate {
+            margin: 1em 0;
+        }
+
+        #output {
+            font-family: Monaco, Menlo, Consolas, Inconsolata, 'Deja Vu Sans Mono', 'Droid Sans Mono', 'Lucida Console', 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+<div id="nav">
+    <a href="/Btc_home.html">« Toolbox</a>
+    <a class="c7sky-ribbon" href="https://c7sky.com/" title="小影志"></a>
+</div>
+
+<div id="header">
+    <h1>BTC钱包命令调用器</h1>
+    <h2>BTC Wallet command caller</h2>
+</div>
+
+<form id="main" class="pure-form">
+    <ul id="bc">
+        <li><span>调用方法</span><input type="text" name="method" id="method"></li>
+        <li><span>参数</span><input type="text" name="parameter" id="parameter"></li>
+    </ul>
+    <button type="button" id="generate" class="pure-button pure-button-primary pure-input-1">获取</button>
+    <textarea name="output" class="pure-input-1" cols="40" rows="7" readonly=""></textarea>
+</form>
+</body>
+<script type="text/javascript">
+
+    function ajax(data) {
+        $.ajax({
+            url : "/obtain",
+            data : data,
+            type : "post",
+            dataType : "json",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        });
+    }
+    $("#generate").click(function() {
+        var metd = $("#method").val();
+        var parameter = $("#parameter").val();
+        if (parameter !== "") {
+           var RpsJson1 = {
+               method :metd,
+               params : parameter.split(" ")
+           };
+           ajax(JSON.stringify(RpsJson1))
+        }else {
+            var RpsJson2 = {
+                method :metd
+            };
+            ajax(JSON.stringify(RpsJson2))
+        }
+
+    });
+</script>
+</html>

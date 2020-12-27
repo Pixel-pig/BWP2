@@ -1,0 +1,165 @@
+
+/* ↓↓↓↓↓↓↓ icon：i-icon为普通图标；w3c-icon为猫头鹰轮廓图标 ↓↓↓↓↓↓↓ */
+
+@font-face {
+    font-family: "custom-font";
+    src: url("./iconfont.eot"), /* IE9+ */
+         url("./iconfont.ttf") format("truetype");
+}
+.icon,
+.i-icon,
+.w3c-icon { display: inline-block; font-style: normal; font-display: auto; line-height: 1; color: inherit; vertical-align: -0.125em; text-transform: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+/* i-icon */
+.i-icon { font-family: "custom-font"; }
+.i-icon-adduser-circle:before { content: "\e715"; }
+.i-icon-alipay::before { content: '\e60a'; }
+.i-icon-arrowdown::before { content: '\e7ee'; }
+.i-icon-battle::before { content: '\e7b3'; }
+.i-icon-battle-o::before { content: '\e7b2'; }
+.i-icon-calculator::before { content: '\e601'; }
+.i-icon-child:before { content: "\e818"; }
+.i-icon-close:before { content: "\e650"; }
+.i-icon-close-thin:before { content: "\e65a"; }
+.i-icon-close-circle:before { content: "\e651"; }
+.i-icon-cloud-download:before { content: "\e7d9"; }
+.i-icon-code:before { content: "\e63a"; }
+.i-icon-comment:before { content: "\e64e"; }
+.i-icon-correct:before { content: "\e8af"; }
+.i-icon-date:before { content: "\e6ff"; }
+.i-icon-delete:before { content: "\e62a"; }
+.i-icon-exercise:before { content: "\e602"; }
+.i-icon-exercise-circle:before { content: "\e812"; }
+.i-icon-eye::before { content: "\e78f"; }
+.i-icon-eye-close::before { content: "\e8ff"; }
+.i-icon-fontsize:before { content: "\e635"; }
+.i-icon-game-circle:before { content: "\e815"; }
+.i-icon-gift:before { content: "\e810"; }
+.i-icon-guide:before { content: "\e60c"; }
+.i-icon-help:before { content: "\e60f"; }
+.i-icon-horn:before { content: "\e72b"; }
+.i-icon-logout:before { content: "\e711"; }
+.i-icon-menu:before { content: "\e60d"; }
+.i-icon-mobile:before { content: "\e799"; }
+.i-icon-more:before { content: "\e60e"; }
+.i-icon-my:before { content: "\e67b"; }
+.i-icon-note:before { content: "\e623"; }
+.i-icon-notice:before { content: "\e731"; }
+.i-icon-notice-outline:before { content: "\e732"; }
+.i-icon-play:before { content: "\e696"; }
+.i-icon-refresh:before { content: "\e600"; }
+.i-icon-resume:before { content: "\e712"; }
+.i-icon-rocket-circle:before { content: "\e814"; }
+.i-icon-search:before { content: "\e63d"; }
+.i-icon-setting:before { content: "\e713"; }
+.i-icon-setting-outline:before { content: "\e714"; }
+.i-icon-share:before { content: "\e7e7"; }
+.i-icon-star:before { content: "\e86a"; }
+.i-icon-star-outline:before { content: "\e7df"; }
+.i-icon-topic:before { content: "\e629"; }
+.i-icon-user:before { content: "\e7ae"; }
+.i-icon-vip:before { content: "\e720"; }
+.i-icon-wallet:before { content: "\e606"; }
+.i-icon-wxpay:before { content: "\e607"; }
+.iconarrowleft:before {content: "\e956";}
+.i-icon-info:before{content: "\e642";}
+.iconsearch-grey-copy:before {content: "\e957";}
+.iconinfo-orange:before {content: "\e958";}
+.iconeye-search:before {content: "\e615";}
+
+/* 锁：locked 是旧版的实心锁，考虑替换 */
+.i-icon-lock-outline:before { content: "\e7ca"; }
+.i-icon-unlock-outline:before { content: "\e7c9"; }
+.i-icon-locked:before { content: "\e630"; }
+
+.i-icon-up:before { content: "\e951"; }
+.i-icon-down:before { content: "\e950"; }
+.i-icon-prev:before { content: "\e772"; }
+.i-icon-next:before { content: "\e771"; }
+
+.i-icon-arrow-up:before { content: "\e61f"; }
+.i-icon-arrow-down:before { content: "\e953"; }
+.i-icon-arrow-left:before { content: "\e955"; }
+.i-icon-arrow-right:before { content: "\e954"; }
+
+/* 三角箭头 */
+.i-icon-md-arrow-dropup:before { content: "\e80a"; }
+.i-icon-md-arrow-dropdown:before { content: "\e807"; }
+.i-icon-md-arrow-dropleft:before { content: "\e808"; }
+.i-icon-md-arrow-dropright:before { content: "\e809"; }
+
+.i-icon-prev-section:before { content: "\e952"; }
+.i-icon-next-section:before { content: "\e63b"; }
+
+.i-icon-ios-call:before { content: "\e782"; }
+.i-icon-ios-contact:before { content: "\e781"; }
+.i-icon-ios-home:before { content: "\e79b"; }
+
+.i-icon-expand:before { content: "\e6db"; }
+.i-icon-compress:before { content: "\e6dc"; }
+
+/* 第三方平台 */
+.i-icon-wechat-circle::before { content: "\e792"; }
+.i-icon-qq-circle::before { content: "\e795"; }
+.i-icon-github-circle::before { content: "\e885"; }
+.i-icon-weibo-circle::before { content: "\e798"; }
+
+
+/* w3c-icon */
+.w3c-icon { font-family: "custom-font"; }
+.w3c-icon-audio:before { content: "\e609"; }
+.w3c-icon-codecamp:before { content: "\e605"; }
+.w3c-icon-content:before { content: "\e603"; }
+.w3c-icon-correct:before { content: "\e61e"; }
+.w3c-icon-course:before { content: "\e611"; }
+.w3c-icon-option:before { content: "\e608"; }
+.w3c-icon-play:before { content: "\e604"; }
+.w3c-icon-column:before { content: "\e641"; }
+.w3c-icon-package:before { content: "\e60b"; }
+.w3c-icon-text:before { content: "\e906"; }
+.w3c-icon-question:before { content: "\e613"; }
+
+/*高客单价*/
+.iconreplay:before { content: "\e610"; }
+.iconbook:before { content: "\e612"; }
+.iconvideo-withcode:before { content: "\e614"; }
+.iconpc:before { content: "\e618"; }
+.icondevice-mobile:before { content: "\e616"; }
+
+/* tryrun运行 */
+.i-icon-device-pc:before {content: "\e61a";}
+.i-icon-device-mobile:before {content: "\e616";}
+.i-icon-device-pad:before {content: "\e617";}
+.i-icon-edit:before {content: "\e6fe";}
+.i-icon-play-simple:before {content: "\e648";}
+.i-icon-code-outline:before {content: "\e660";}
+
+/* 点赞 */
+.icongood-o:before { content: "\e619"; }
+.icongood:before { content: "\e61a"; }
+
+/* 带动画的图标 */
+.i-icon-loading:before { content: "\e7a6"; display: inline-block; -webkit-animation: loading 1s linear infinite; animation: loading 1s linear infinite; }
+
+
+/* ↓↓↓↓↓↓↓ animation ↓↓↓↓↓↓↓ */
+@-webkit-keyframes loading {
+    from {
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+        }
+    to{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}
+@keyframes loading {
+    from {
+        -webkit-transform: rotate(0);
+                transform: rotate(0);
+        }
+    to{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)https://www.w3cschool.cn/xuexiw3c/w3c-tutorial.html -->
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>BTC 钱包命令教程</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="keywords" content="W3C 教程">
+    <meta name="description"
+          content=" W3C 教程  W3C 让每个人都能在互联网上分享资源。 开始学习 W3C ! W3C 教程列表 W3C 简介 本节内容：W3C 是什么组织，它如何运作，网络是如何被标准化的。 W3C 过程 本节内容：W3C 的标准化过程。 W3C HTML 本节内容：简要介绍 W3C 的 HTML。 W3C X_来自W3C 标准教程，w3cschool编程狮。">
+    <link href="/static/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/static/css/iconfont.css">
+    <link rel="stylesheet" href="/static/css/w3.css">
+    <link rel="stylesheet" href="/static/css/style-kn-project-view.css" type="text/css">
+    <link rel="stylesheet" href="/static/css/style-theme.css" type="text/css">
+
+    <link rel="stylesheet" href="/static/css/feedback.css">
+    <script src="/static/js/push.js"></script>
+    <script src="/static/js/hm.js"></script>
+    <script src="/static/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="/static/js/feedback.js" type="text/javascript"></script>
+    <script src="/static/W3C 教程_w3cschool_files/backmore.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="/static/css/project_1.css">
+    <link rel="stylesheet" href="/static/css/project.css">
+    <link href="/static/css/default.css" rel="stylesheet" type="text/css">
+    <script src="/static/js/highlight.pack.js" type="text/javascript"></script>
+    <link rel="shortcut icon" href="https://7n.w3cschool.cn/statics/images/favicon.ico">
+    <script src="/static/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="/static/js/jquery.slimscroll.1.38.min.js" type="text/javascript"></script>
+    <script src="/static/js/project.leftbox.js" type="text/javascript"></script>
+    <style>.left-container {
+            width: 270px;
+        }
+
+        .left-drager {
+            left: 270px;
+        }
+
+        .main-container {
+            margin-left: 270px;
+        }
+
+        #pro-footer {
+            margin-left: 270px;
+        }
+
+        .space-tools-section {
+            width: 270px;
+        }</style>
+    <script src="/static/js/share.js"></script>
+    <link rel="stylesheet" href="/static/css/share_style0_16.css">
+</head>
+
+<body>
+<div id="full-height-container" class="project-container color-theme-white">
+    <!--控制本地颜色主题样式-->
+    <script type="text/javascript">
+        var tempColor = $.cookie("color");
+        if (tempColor != undefined) {
+            $("#full-height-container").addClass(tempColor);
+        }
+    </script>
+    <!-- 教程内容页头部 -->
+    <!--header start-->
+    <div id="header" class="header-with-search pro_header">
+        <div id="header_item">
+            <!-- 顶部广告 -->
+            <div id="topbanner" style="display: none;">
+                <div class="close-topbox close_top_ad">
+                    <i class="i-icon i-icon-close i-icon-close-thin"></i>
+                </div>
+            </div>
+
+
+            <div id="header_index">
+                <div id="header-l">
+                    <a title="w3cschool" class="logo"><img
+                                src="/static/img/logo.png" alt="w3cschool"></a>
+
+                </div>
+
+                <div class="fr h-right">
+                    <div class="fl mobile">
+
+                        <div class="dropdown">
+                            <div class="dropdown-inner">
+                                <div class="text-center dropdown-content">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fl sig-box">
+                        <div><a class="link" href="/index.html">注册</a><span
+                                    class="sep">|</span><a class="link"
+                                                           href="/index.html">登录</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="register-Box" id="register-Box" style="display: none;">
+        <div class="register-Box-content">
+            <div class="register-Box-top">
+                <span class="register-Box-title">注册成功</span>
+                <span onclick="closeDialogBox(this)" class="feedback-Box-close">X</span>
+            </div>
+            <div class="register-Box-info">
+                <div class="register-Box-left" style="float: left;">
+                    <img class="register-cover" src="/static/img/avatar_14.jpg">
+                </div>
+                <div class="register-Box-right">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var apppath = '/xuexiw3c/w3c-tutorial.html';
+        var domain = '//www.w3cschool.cn';
+    </script>
+    <!--header end-->
+
+    <div id="m-splitter">
+        <div class="m-splitter-left left-container" style="width: 270px; height: 703px;">
+            <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: inherit; height: 703px;">
+                <div class="fixed-sidebar mscroller" style="width: inherit; height: 703px; overflow: hidden;">
+                    <div class="splitter-sidebar">
+                        <div class="sidebar-space-info">
+                            <a title="W3C 标准教程">
+                                <div class="sidebar-pro-wrapper">
+                                    <div class="sidebar-pro-container">
+                                        <div class="sidebar-pro-img">
+                                            <span><img class="pimg-cover" alt="W3C 标准教程"
+                                                       src="/static/img/Bitcoin.png"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro-name-container">
+                                    <div class="sidebar-pro-name">
+                                        <span>Btc 标准教程</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!--左侧栏导航 start-->
+                        <div class="sidebar-nav">
+                            <ul class="treeth">
+                                <li class="active sidebar-nav-tree" target="sidebar-tree-content"><a href="javascript:;"
+                                                                                                     class="text"
+                                                                                                     title="目录"><i
+                                                class="icon icon-th-list"></i> <span class="title">目录</span></a></li>
+                            </ul>
+                        </div>
+                        <!--左侧栏导航 end-->
+                        <div style="clear:both"></div>
+                        <div class="sidebar-content">
+                            <div class="sidebar-tree">
+                                <div class="sidebar-tree-content">
+                                    <div class="dd" id="nestable_handbook" data-tid="190" data-id="handbook">
+                                        <ol class="dd-list">
+
+
+                                            <li class="dd-item" data-id="w3c-tutorial">
+                                                <div class="dd-content   active ">
+                                                    <i class="ic-folder-open2"></i>
+
+                                                    <a href="/Btc_home.html"
+                                                       title="BTC 钱包教程">BTC 钱包教程</a>
+                                                </div>
+                                                <ol class="dd-list">
+
+
+                                                </ol>
+                                            </li>
+
+
+                                            <li class="dd-item" data-id="w3c-intro">
+                                                <div class="dd-content  ">
+                                                    <i class="ic-folder-open2"></i>
+
+                                                    <a href="/obtain.html"
+                                                       title="生成器">生成器</a>
+                                                </div>
+                                                <ol class="dd-list">
+
+
+                                                </ol>
+                                            </li>
+
+
+                                            <li class="dd-item" data-id="xuexiw3c-standards">
+                                                <div class="dd-content  ">
+                                                    <i class="ic-folder-open2"></i>
+
+                                                    <a href=""
+                                                       title="GetBlockChainInfo">GetBlockChainInfo</a>
+                                                </div>
+                                                <ol class="dd-list">
+
+
+                                                </ol>
+                                            </li>
+
+
+                                            <li class="dd-item" data-id="w3c-process">
+                                                <div class="dd-content  ">
+                                                    <i class="ic-folder-open2"></i>
+
+                                                    <a href=""
+                                                       title="GetBlockCount">GetBlockCount</a>
+                                                </div>
+                                                <ol class="dd-list">
+
+
+                                                </ol>
+                                            </li>
+
+
+                                            <li class="dd-item" data-id="w3c-html">
+                                                <div class="dd-content  ">
+                                                    <i class="ic-folder-open2"></i>
+
+                                                    <a href=""
+                                                       title="GetBestBlockHash">GetBestBlockHash</a>
+                                                </div>
+                                                <ol class="dd-list">
+
+
+                                                </ol>
+                                            </li>
+
+
+                                            <li class="dd-item" data-id="w3c-xhtml">
+                                                <div class="dd-content  ">
+                                                    <i class="ic-folder-open2"></i>
+
+                                                    <a href=""
+                                                       title="GetBlock">GetBlock</a>
+                                                </div>
+                                                <ol class="dd-list">
+
+
+                                                </ol>
+                                            </li>
+
+
+                                            <li class="dd-item" data-id="w3c-xml">
+                                                <div class="dd-content  ">
+                                                    <i class="ic-folder-open2"></i>
+
+                                                    <a href="https://www.w3cschool.cn/xuexiw3c/w3c-xml.html"
+                                                       title="W3C XML 活动">W3C XML 活动</a>
+                                                </div>
+                                                <ol class="dd-list">
+
+
+                                                </ol>
+                                            </li>
+
+
+                                            <li class="dd-item" data-id="w3c-css">
+                                                <div class="dd-content  ">
+                                                    <i class="ic-folder-open2"></i>
+
+                                                    <a href="https://www.w3cschool.cn/xuexiw3c/w3c-css.html"
+                                                       title="W3C CSS 活动">W3C CSS 活动</a>
+                                                </div>
+                                                <ol class="dd-list">
+
+
+                                                </ol>
+                                            </li>
+
+
+                                            <li class="dd-item" data-id="w3c-xsl">
+                                                <div class="dd-content  ">
+                                                    <i class="ic-folder-open2"></i>
+
+                                                    <a href="https://www.w3cschool.cn/xuexiw3c/w3c-xsl.html"
+                                                       title="W3C XSL 活动">W3C XSL 活动</a>
+                                                </div>
+                                                <ol class="dd-list">
+
+
+                                                </ol>
+                                            </li>
+
+
+                                            <li class="dd-item" data-id="w3c-schema">
+                                                <div class="dd-content  ">
+                                                    <i class="ic-folder-open2"></i>
+
+                                                    <a href="https://www.w3cschool.cn/xuexiw3c/w3c-schema.html"
+                                                       title="W3C XML Schema 活动">W3C XML Schema 活动</a>
+                                                </div>
+                                                <ol class="dd-list">
+
+
+                                                </ol>
+                                            </li>
+
+
+                                            <li class="dd-item" data-id="w3c-xpath">
+                                                <div class="dd-content  ">
+                                                    <i class="ic-folder-open2"></i>
+
+                                                    <a href="https://www.w3cschool.cn/xuexiw3c/w3c-xpath.html"
+                                                       title="W3C XPath 活动">W3C XPath 活动</a>
+                                                </div>
+                                                <ol class="dd-list">
+
+
+                                                </ol>
+                                            </li>
+
+
+                                            <li class="dd-item" data-id="w3c-xquery">
+                                                <div class="dd-content  ">
+                                                    <i class="ic-folder-open2"></i>
+
+                                                    <a href="https://www.w3cschool.cn/xuexiw3c/w3c-xquery.html"
+                                                       title="W3C XQuery 活动">W3C XQuery 活动</a>
+                                                </div>
+                                                <ol class="dd-list">
+
+
+                                                </ol>
+                                            </li>
+
+
+                                            <li class="dd-item" data-id="w3c-dom">
+                                                <div class="dd-content  ">
+                                                    <i class="ic-folder-open2"></i>
+
+                                                    <a href="https://www.w3cschool.cn/xuexiw3c/w3c-dom.html"
+                                                       title="W3C DOM 活动">W3C DOM 活动</a>
+                                                </div>
+                                                <ol class="dd-list">
+
+
+                                                </ol>
+                                            </li>
+
+
+                                            <li class="dd-item" data-id="w3c-soap">
+                                                <div class="dd-content  ">
+                                                    <i class="ic-folder-open2"></i>
+
+                                                    <a href="https://www.w3cschool.cn/xuexiw3c/w3c-soap.html"
+                                                       title="W3C SOAP 活动">W3C SOAP 活动</a>
+                                                </div>
+                                                <ol class="dd-list">
+
+
+                                                </ol>
+                                            </li>
+
+
+                                            <li class="dd-item" data-id="w3c-wsdl">
+                                                <div class="dd-content  ">
+                                                    <i class="ic-folder-open2"></i>
+
+                                                    <a href="https://www.w3cschool.cn/xuexiw3c/w3c-wsdl.html"
+                                                       title="W3C WSDL 活动">W3C WSDL 活动</a>
+                                                </div>
+                                                <ol class="dd-list">
+
+
+                                                </ol>
+                                            </li>
+
+
+                                            <li class="dd-item" data-id="w3c-rdf">
+                                                <div class="dd-content  ">
+                                                    <i class="ic-folder-open2"></i>
+
+                                                    <a href="https://www.w3cschool.cn/xuexiw3c/w3c-rdf.html"
+                                                       title="W3C RDF 活动">W3C RDF 活动</a>
+                                                </div>
+                                                <ol class="dd-list">
+
+
+                                                </ol>
+                                            </li>
+
+
+                                            <li class="dd-item" data-id="w3c-other">
+                                                <div class="dd-content  ">
+                                                    <i class="ic-folder-open2"></i>
+
+                                                    <a href="https://www.w3cschool.cn/xuexiw3c/w3c-other.html"
+                                                       title="其他 W3C 活动">其他 W3C 活动</a>
+                                                </div>
+                                                <ol class="dd-list">
+
+
+                                                </ol>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <!--  sidebar-tree-content end  -->
+                                <div class="search-box hide1">
+                                    <div id="knsearch" class="tab-pane">
+                                        <div class="knsearch-input">
+                                            <input type="text" placeholder="搜索手册内容" name="w" class="input-s">
+                                            <button class="knsearchbtn">搜索</button>
+                                            <!--<button class="kncleanbtn">清空</button>-->
+                                        </div>
+                                        <div class="searchres">
+                                        </div>
+                                        <div class="sidebar-tree-dict"></div>
+                                    </div>
+                                </div>
+                                <div class="stars-box hide1">
+                                    <div id="kncollect" class="tab-pane">
+                                        <ul class="dd-list">
+                                            <li class="nostar">请登录查看</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="space-tools-section">
+                    <div class="tools-button">
+                    <a href="" class="expand-collapse-trigger"></a>
+                    </div>
+                    </div> -->
+                </div>
+                <div class="slimScrollBar"
+                     style="background: rgb(161, 178, 189); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 640.167px;"></div>
+                <div class="slimScrollRail"
+                     style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div>
+            </div>
+        </div>
+        <div class="splitter-handle left-drager">
+            <div class="left-dragger-c splitter-handle-highlight"></div>
+        </div>
+        <div id="pro-mian" class="main-container font0">
+            <div class="project-body">
+                <div class="portlet-title pro-title" style="width: 968px;">
+                    <div class="set-btn-group font-settings pull-left">
+                        <div class="set-dropdown-menu docblur" style="display:none;">
+                            <div class="dropdown-caret">
+                                <span class="caret-outer"></span>
+                                <span class="caret-inner"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="pro-mian-header">
+                    <div class="content-top">
+                        <h1>BTC 钱包教程</h1>
+                    </div>
+                    <div class="kn-infomation" title="创建于:2020-12-23 14:59:08">2020-12-23 14:59 更新</div>
+                    <!--                 <div class="kn-infomation">
+                    由&nbsp;<span>tankcloud</span>&nbsp;创建， 最后一次修改&nbsp;<span>2020-12-23</span>
+                    </div>  -->
+                </div>
+                <div class="content-bg">
+                    <div class="content-intro view-box "><h2>BTC 钱包命令 <span class="color_h1">教程</span></h2>
+                        <p>比特币钱包高级功能使用命令。</p>
+                        <p><b>开始学习 BTC钱包命令 !</b></p>
+                        <h2 class="tutheader">BTC钱包命令</h2>
+                        <p><font color="red">一:GetBestBlockHash/获取链头区块哈希:</font><br> 调用返回本地最优链上最后一个区块的哈希。</p>
+                        <p>参数：无</p><br>
+                        <p><font color="red">二:GetBlock/获取指定哈希的区块 </font><br>调用返回指定哈希的区块，根据参数不同，返回结果可以是序列化码流 或者JSON对象
+                        </p>
+                        <p>参数：区块哈希</p><br>
+                        <p><font color="red">三:GetBlockChainInfo/获取区块链当前状态</font><br> 调用返回区块链的当前状态</p>
+                        <p>参数：无</p><br>
+                        <p><font color="red">四:GetBlockCount/获取区块数量</font><br> 调用返回本地最优链中的区块数量</p>
+                        <p>参数：无</p><br>
+                        <div style="clear:both"></div>
+                    </div>
+                    <!--控制本地字体主题样式-->
+                    <script type="text/javascript">
+                        var tempFontsize = $.cookie("fontsize");
+                        if (tempFontsize != undefined) {
+                            $("#pro-mian").addClass(tempFontsize);
+                        }
+                    </script>
+                    <!--我要赞赏-->
+                    <div class="project-sq"></div>
+                    <!--我要赞赏结束-->
+                    <!--我要评价-->
+                    <div id="evaluate-box"><span id="evaluates">以上内容是否对您有帮助：</span><span class="star_score"><span
+                                    title="根本没帮助"></span><span title="文档较差"></span><span title="文档一般"></span><span
+                                    title="文档不错"></span><span title="文档很好"></span></span></div>
+                    <div id="evaluatesContent" style="display: none;">
+                        <div id="evaluate_title">在文档使用的过程中是否遇到以下问题：</div>
+                        <ul>
+                            <li><input type="checkbox" value="内容错误" class="evaluateSelect"><span
+                                        class="content_1">内容错误</span></li>
+                            <li><input type="checkbox" value="更新不及时" class="evaluateSelect"><span
+                                        class="content_1">更新不及时</span></li>
+                            <li><input type="checkbox" value="链接错误" class="evaluateSelect"><span
+                                        class="content_1">链接错误</span></li>
+                            <li><input type="checkbox" value="缺少代码/图片示列" class="evaluateSelect"><span class="content_1">缺少代码/图片示列</span>
+                            </li>
+                            <li><input type="checkbox" value="太简单/步骤待完善" class="evaluateSelect"><span class="content_1">太简单/步骤待完善</span>
+                            </li>
+                            <li><input type="checkbox" value="其他" class="evaluateSelect"><span><span
+                                            class="content_1">其他</span></span></li>
+                        </ul>
+                        <div class="comment-box" id="">
+                            <p style="color:#686868; margin-bottom: 15px;">更多建议：</p>
+                            <textarea class="comment-txt form-input" placeholder="请详细描述在文档使用中遇到的问题或改进建议"
+                                      id="otheradvise"></textarea>
+                            <div class="comment-box-btn">
+                                <a href="javascript:;" class="comment-btn" onclick="submitEvaluate()" data-score="1"
+                                   id="submitEvaluate">提交建议</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--评价结束-->
+                    <div class="content-links">
+                        <div class="next-link"><a href="https://www.w3cschool.cn/xuexiw3c/w3c-intro.html"
+                                                  title="下一篇：W3C 简介">BTC 简介</a> →
+                        </div>
+                    </div>
+                    <!--练习、出题、写笔记-->
+                    <div class="project-operation">
+
+                    </div>
+                    <!--横版广告放置-->
+
+                    <!-- 笔记列表 -->
+                    <!--相关推荐|wiki推荐-->
+                    <!--相关推荐|wiki推荐 结束-->
+                </div>
+            </div>
+            <div id="pro-footer">
+                <div class="s-footer">
+                    <div class="s-footer-bottom">
+                        <p>Copyright©2020&nbsp;<a href="https://www.w3cschool.cn/" target="_blank"
+                                                  title="w3cschool">Btc</a>张大帅&nbsp;<a
+                                    href="http://www.beian.miit.gov.cn/" target="_blank" rel="nofollow"
+                                    class="footer-record">赣ICP备15026381号-3</a>&nbsp;<a
+                                    href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=15020309033921"
+                                    target="_blank" rel="nofollow" style="margin: 0 5px;"><i class="beian"></i>赣公网安备15020309033921号</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="toolbar" style="right: -60px; transition: right 0.24s ease 0s;">
+
+
+        <div class="tool feedback" data-module="page" onclick="showDialogBox(this)">
+            <div class="tool-inner">
+                <div class="tool-icon"></div>
+                <div>意见反馈</div>
+            </div>
+        </div>
+        <div class="tool backtop" data-visibility="50">
+            <div class="tool-inner">
+                <div class="tool-icon"></div>
+                <div>返回顶部</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="feedback-Box" style="display: none;">
+        <div class="feedback-Box-content" style="width: 800px;">
+            <div class="feedback-Box-top">
+                <span class="feedback-Box-title">意见反馈</span>
+                <span onclick="closeDialogBox(this)" class="feedback-Box-close">X</span>
+            </div>
+            <ul>
+                <li class="feedback-box">
+                    <div id="feedbackRadio" type="radio" name="feedbackType" data-value="0" style=""> 意见反馈：</div>
+                    <textarea name="reportInfo" id="elmaaa" class="feedback-text" rows="15" placeholder="请留下您宝贵的意见反馈吧。"
+                              style="width: 700px;height:200px;overflow:auto;"></textarea>
+                    <p>联系方式：</p>
+                    <input type="text" placeholder="留个联系方式呗..." name="reportAddress" class="radio-text"
+                           id="reportAddress"
+                           style="height: 30px;width: 200px;">
+                </li>
+            </ul>
+            <button class="search-s" onclick="dialogSubmit(this)" id="reportSubmit">提交</button>
+        </div>
+    </div>
+
+    <div id="note-start" style="display: none"></div>
+
+    <div id="detail" style="display:none;">
+        <div id="note-Dialog" class="note-Dialog">
+            <div class="note-Box-content">
+                <div class="ntitlebox">
+                    <input type="text" placeholder="" name="ntitle" class="ntitle" id="ntitle">
+                </div>
+                <div id="editorarea">
+                <textarea name="ncontent" id="ncontent" class="ncontent" rows="15" placeholder=""
+                          style="width: 700px;height:200px;overflow:auto;"></textarea>
+                </div>
+                <p></p>
+                <a class="closenote" href="https://www.w3cschool.cn/my/note" target="_blank">查看完整版笔记</a>
+                <button class="notesubmit" id="notesubmit">保存</button>
+                <button class="notebtn pull-right closenote" style="margin:20px 0">关闭</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="report-Box" style="display: none;">
+        <div class="report-Box-content">
+            <div class="report-Box-top">
+                <span class="report-Box-title">违规举报</span>
+                <span onclick="closeReportBox(this)" class="report-Box-close">X</span>
+            </div>
+            <ul>
+                <li class="radio-box">
+                    <input id="reportRadio" type="radio" name="reportType" value="1" checked="checked"> 广告等垃圾信息
+                </li>
+                <li class="radio-box">
+                    <input id="reportRadio" type="radio" name="reportType" value="2"> 不友善内容
+                </li>
+                <li class="radio-box">
+                    <input id="reportRadio" type="radio" name="reportType" value="3"> 违反法律法规的内容
+                </li>
+                <li class="radio-box">
+                    <input id="reportRadio" type="radio" name="reportType" value="4"> 不宜公开讨论的政治内容
+                </li>
+                <li class="radio-box" onclick="reportOther(this)">
+                    <input id="reportRadio" type="radio" name="reportType" value="0"> 其他
+                    <input type="text" class="radio-text" name="reportInfo" value="" placeholder="请填写您的举报理由。">
+                </li>
+            </ul>
+            <button class="search-s" onclick="reportSubmit(this)" id="reportSubmit">提交</button>
+        </div>
+    </div>
+    <div class="widget-body" data-type="project">
+
+        <div class="pay-area" data-static="//www.w3cschool.cn/statics"></div>
+        <div class="dialog-area"></div>
+
+        <div id="tryframebox" class="tryframebox" style="display: none;">
+
+
+        </div>
+        <style>
+            .closeifream {
+                position: absolute;
+                top: 0;
+                right: -48px;
+                z-index: 9999999;
+                color: #fff;
+                cursor: pointer;
+            }
+        </style>
+        <script src="/static/js/shCore.min.js" type="text/javascript"></script>
+        <script src="/static/js/commonfooter.js" type="text/javascript"></script>
+        <script src="/static/js/project.view.js" type="text/javascript"></script>
+        <script src="/static/js/ajaxdo.core.js" type="text/javascript"></script>
+        <!-- <script src="//www.w3cschool.cn/statics/js/paypraise.js" type="text/javascript"></script> -->
+        <script type="text/javascript">
+            var kn = {
+                kename: 'w3c-tutorial',
+                pename: 'xuexiw3c',
+                ismenu: '0',
+                ktitle: 'W3C 教程',
+                ktype: 'kn',
+                original: '1',
+                uid: '0',
+            };
+            var book = {
+                pename: 'xuexiw3c',
+                bookname: 'W3C 标准教程'
+            };
+
+            var Gvar = {
+                activityflag: ''
+            };
+            checkword = getUrlParam('checkword');
+            if (checkword) {
+                var htmls = $('#pro-mian').html();
+                htmls = htmls.replace(new RegExp(checkword, 'g'), '<span class="checkword" style="background-color: skyblue;">$&</span>');
+                $('#pro-mian').html(htmls);
+                setTimeout(function () {
+                    $('html').animate({scrollTop: $('.checkword').offset().top - 95}, 500);
+                }, 0)
+            }
+
+            //获取url中的参数
+            function getUrlParam(name) {
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+
+                var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+                if (r != null) {
+                    return window.decodeURIComponent(r[2]);
+                }
+
+                return null; //返回参数值
+            }
+
+            function isProjectLike() {
+
+                if (kn.uid == '' || kn.uid == '0') {
+                    toastr.warning("您还未登录,请先登录!", '', {"positionClass": "toast-top-center"});
+                    return;
+                }
+                $.ajaxdo({
+                    url: "/project/islike/xuexiw3c.html",
+                    type: "post",
+                    dataType: 'json',
+                    data: {},
+                    sync: false,
+                    success: function (data) {
+                        if (data.statusCode == 200) {
+                            $('.avatar-list').find('p').remove();
+                            $('.avatar-list').append('<a href="javascript:;" title="' + data.data + '"><img src="https://7n.w3cschool.cn/attachments/avatar2/avatar_' + data.data + '.jpg" title=""></a>');
+                            var likecount = $("#likecount").text() * 1 + 1;
+                            $("#likecount").html(likecount);
+                            $(".btn-thumbs-up i").attr('class', 'icon-thumbs-up isdone');
+                            $("#likestatus").html('已赞');
+                            toastr.success(data.message, '', {"positionClass": "toast-top-center"});
+                        } else {
+                            toastr.warning(data.message, '', {"positionClass": "toast-top-center"});
+                        }
+                    }
+                });
+            }
+
+            function isProjectStar() {
+                if (kn.uid == '' || kn.uid == '0') {
+                    toastr.warning("您还未登录,请先登录!", '', {"positionClass": "toast-top-center"});
+                    return;
+                }
+                var type = $('#hbstar').attr('data-type');
+                $.ajaxdo({
+                    url: "/project/star/xuexiw3c.html",
+                    type: "post",
+                    dataType: 'json',
+                    data: {},
+                    success: function (data) {
+                        if (data.statusCode == 200) {
+                            if (type == 'star') {
+                                $('#hbstar').html('<i class="icon-star isdone"></i><span>已收藏</span>');
+                                $('#hbstar').attr('data-type', 'rstar');
+                                toastr.success(data.message, '', {"positionClass": "toast-top-center"});
+                            } else {
+                                $('#hbstar').html('<i class="icon-star"></i><span>收藏</span>');
+                                $('#hbstar').attr('data-type', 'star');
+                                toastr.success(data.message, '', {"positionClass": "toast-top-center"});
+                            }
+                        } else {
+                            toastr.warning(data.message, '', {"positionClass": "toast-top-center"});
+                        }
+                    }
+                });
+            }
+
+            $(function () {
+
+                if (kn.kename != '') {
+                    var lastviewUrl = '//' + window.location.host + '/' + kn.pename + '/' + kn.kename + '.html';
+                    localStorage.setItem("lastview_" + kn.pename, lastviewUrl);
+                }
+
+                $(document).on("click", function () {
+                    $(".docblur").hide();
+                });
+
+                $(".onlinenote").show();
+
+                if (location.hash !== "") { // 修复锚点定位失效的问题
+                    setTimeout(function () {
+                        location.href = location.hash;
+                    }, 300);
+                }
+
+                if (Gvar.activityflag > 0) { // 开启了活动
+                    $.ajax({
+                        url: "/getActivity",
+                        type: "get",
+                        dataType: "json",
+                        success: function (msg) {
+                            function loadad(content) {
+                                var tpl = '<div class="activiey-area">' +
+                                    '<div class="activiey-bg"></div>' +
+                                    '<div class="activiey-main">' +
+                                    '<span class="close-btn"></span> <div style="max-height:500px;max-width:570px;">' + content + '</div></div>' +
+                                    '</div>';
+
+                                $("body").append(tpl);
+
+                                $(".activiey-main .close-btn").on("click", function () {
+                                    $(".activiey-area").hide();
+                                });
+
+                            }
+
+                            if (msg.statusCode < 300) {
+                                console.log(msg.data);
+// 写入cookie
+                                $.cookie("activity_showed", 1);
+                                loadad(msg.data.wincontent);
+                                toastr.success(msg.message);
+                            } else {
+                                toastr.warning(msg.message);
+                            }
+                        }
+                    });
+                }
+                var kename = kn.kename;
+                var fid = "0";
+                var uid = '0';
+                $(document).on('keyup', function (e) {
+                    var keyCode = e.keyCode;
+                    var prev, next;
+                    if (keyCode == 37) { // 上一篇
+                        prev = $(".navigation-prev");
+                        if (prev.length > 0 && !prev.is(":hidden")) {
+                            location.href = prev.attr("href");
+                        }
+                    }
+                    if (keyCode == 39) { // 下一篇
+                        next = $(".navigation-next");
+                        if (next.length > 0 && !next.is(":hidden")) {
+                            location.href = next.attr("href");
+                        }
+                    }
+                });
+                /*开启计时 准备记录积分*/
+                var vcreditfull = $.cookie('ypre_vcreditfull');
+//console.log(vcreditfull);
+                if (vcreditfull == undefined && uid != '0' && uid != '') {
+                    setTimeout(function () {
+                        $.ajax({
+                            url: "/project/setViewCredit",
+                            type: "post",
+                            data: {kename: kename},
+                            dataType: "json",
+                            success: function (msg) {
+                                var statusCode = {
+                                    '200': 'success',
+                                    '400': 'warning',
+                                };
+                                var toastrType = statusCode[msg.statusCode];
+                                if (msg.statusCode == 300 || msg.statusCode == 400) {
+                                    return;
+                                }
+                                toastr[toastrType](msg.message);
+                            }
+                        });
+                    }, 30000);
+                }
+                hljs.initHighlightingOnLoad();//高亮代码
+                window._bd_share_config = {"common": {"bdSnsKey": {}, bdPopupOffsetTop: "5"}, "share": {}};
+                with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'https://7n.w3cschool.cn/plugins/baidushare/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+            });
+            $(".toggle-dropdown").on('click', function (e) {
+                e.stopPropagation();
+                if ($(this).next().is(":hidden")) {
+                    $(this).next().show();
+                } else {
+                    $(this).next().hide();
+                }
+            });
+
+            $(".set-dropdown-menu").on("click", function (e) {
+                e.stopPropagation();
+            });
+
+            function getviewkn() {
+                var usernamestr = '';
+                $.ajax({
+                    url: "/my/knowledge/getViewkn?pename=" + book.pename,
+                    dataType: "json",
+                    success: function (msg) {
+                        var objli, objtt;
+                        for (var p in msg) {
+                            objli = $("#nestable_handbook").find(".dd-item[data-id='" + msg[p]['kename'] + "']");
+                            if (objli.attr("ismenu") != 1) {
+                                objli.addClass("readed").find("a").attr("title", "上次浏览时间:(" + msg[p]['lasttime'] + ")");
+                            }
+                        }
+                    }
+                });
+            }
+
+            function openNote() {
+                $(".onlinenote").trigger("click");
+            }
+
+            !function () {
+                var timer = null;
+                var toolbar = $('#toolbar');
+                toolbar.css({
+                    right: '-60px',
+                    transition: 'right 0.24s',
+                    webkitTransition: 'right 0.24s'
+                });
+
+                $(window).on('scroll', function () {
+                    showToolbar();
+                    clearTimeout(timer);
+                    timer = setTimeout(function () {
+                        hideToolbar();
+                    }, 1000)
+                });
+                toolbar.hover(function () {
+                    showToolbar();
+                    clearTimeout(timer);
+                }, function () {
+                    timer = setTimeout(function () {
+                        hideToolbar();
+                    }, 1000)
+                });
+
+                function showToolbar() {
+                    toolbar.css('right', '0');
+                }
+
+                function hideToolbar() {
+                    toolbar.css('right', '-60px');
+                }
+            }()
+        </script>
+        <script type="text/javascript">
+            // 如果需要给后台返值的话，返回 $(".star_score span.select").size()的值即可。
+            $(function () {
+//生成5个星星
+                var starCheck = ['根本没帮助', '文档较差', '文档一般', '文档不错', '文档很好'];
+                for (var i = 0; i < starCheck.length; i++) {
+                    var _html = '<span title="' + starCheck[i] + '"></span>';
+                    $(".star_score").append(_html);
+                }
+//鼠标滑过，星星背景图片改成选中图片
+                $(".star_score span").hover(function () {
+                    var index = $(this).index();
+                    for (var i = 0; i <= index; i++) {
+                        $(".star_score span").eq(i).addClass("active");
+                    }
+//鼠标移除去掉激活效果
+                }, function () {
+                    $(".star_score span").removeClass("active");
+                });
+                var tourist = -parseInt(10000000 * Math.random());//给游客随机id
+//星星点击，这颗星星之前的所有星星加上选中效果
+                $(".star_score span").on("click", function () {
+                    var x = $(this).index();
+                    $(".star_score span").removeClass('select');
+                    for (var i = 0; i <= x; i++) {
+                        $(".star_score span").eq(i).addClass('select');
+                    }
+                    ;
+                    evaluate(x + 1);
+                });
+            })
+
+            function evaluate(scores) {
+                if (scores < 4) {
+                    $('#evaluatesContent').show();
+                    $('#submitEvaluate').attr('data-score', scores);
+                    return false;
+                } else {
+                    $('#evaluatesContent').hide();
+                    evaluateSubmit(scores);
+                }
+            }
+
+            function evaluateSubmit(scores, advise = '') {
+                var pid = '47';
+                var aid = '190';
+                var uid = 0;
+//alert(aid);
+                $.ajax({
+                    url: "/index/evaluate",
+                    type: "post",
+                    data: {
+                        score: scores,
+                        pid: pid,
+                        aid: aid,
+                        uid: uid,
+                        title: book.bookname,
+                        mintitle: kn.ktitle,
+                        advise: advise
+                    },
+                    dataType: "json",
+                    success: function (msg) {
+                        if (msg.statusCode == 200) {
+                            toastr.success(msg.message);
+                        } else {
+                            toastr.error(msg.message);
+                        }
+                    }
+                });
+            }
+
+            function submitEvaluate() {
+                var score = $('#submitEvaluate').attr('data-score');
+                var advise = '';
+                $.each($('.evaluateSelect'), function () {
+                    if (this.checked) {
+                        advise = $(this).val() + ',' + advise;
+                    }
+                });
+                var otheradvise = $('#otheradvise').val();
+                advise = advise + otheradvise;
+                evaluateSubmit(score, advise);
+
+            }
+
+            function openNoteList(obj) {
+                var display = $('#notelist_content').css('display');
+                if (display == 'none') {
+                    $(obj).children('i').addClass('icon-circle-arrow-up');
+                    $(obj).children('i').removeClass('icon-circle-arrow-down');
+                    $('#notelist_content').show();
+                } else {
+                    $(obj).children('i').addClass('icon-circle-arrow-down');
+                    $(obj).children('i').removeClass('icon-circle-arrow-up');
+                    $('#notelist_content').hide();
+                }
+            }
+
+            getNotelist();
+
+            //笔记点赞
+            function islikeNote(obj, kmid) {
+                toastr.warning('请先登录');
+            }
+
+            $("#pro-mian").on("click", "[showtry]", function (e) {
+                e.stopPropagation();
+                e.preventDefault();
+
+                var url = $(this).attr('href');
+                kn.tryurl = url;
+                showtry(url + "?stype=nohead");
+
+            });
+
+            function showtry(url) {
+                $("#tryframebox").show();
+                $("#tryframe").attr("src", url);
+            }
+
+            function hidetry() {
+                if (!$("#tryframebox").is(":hidden")) {
+
+                    $("html").css("overflow-y", "auto");
+// $("#tryframebox").animate({"right":"-3000px"},function(){
+
+                    $("#tryframebox").hide();
+// });
+                }
+
+            }
+
+            $(document).on("click", function () {
+                $(".docblur").hide();
+                hidetry();
+            });
+        </script>
+
+</body>
+</html>

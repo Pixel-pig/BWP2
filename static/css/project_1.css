@@ -1,0 +1,244 @@
+  /*笔记模态框样式*/
+  .switch-box {
+    position: relative;	
+    left: 80px;
+    top: -20px;
+    display: block;
+}
+.switch-box .switch-box-slider {
+    position: relative;
+    display: inline-block;
+    height: 8px;
+    width: 32px;
+    background: #d5d5d5;
+    border-radius: 8px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.switch-box .switch-box-slider:after {
+    position: absolute;
+    left: -8px;
+    top: -8px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #eeeeee;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    content: '';
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.switch-box .switch-box-input {
+    display: none;
+}
+.switch-box .switch-box-input ~ .switch-box-label {
+    margin-left: 8px;
+}
+.switch-box .switch-box-input:checked ~ .switch-box-slider:after {
+    left: 16px;
+}
+.switch-box .switch-box-input:disabled ~ .switch-box-slider {
+    background: #e2e2e2;
+    cursor: default;
+}
+.switch-box .switch-box-input:disabled ~ .switch-box-slider:after {
+    background: #d5d5d5;
+}
+.switch-box.is-success .switch-box-input:checked:not(:disabled) ~ .switch-box-slider {
+    background: #54d98c;
+}
+.switch-box.is-success .switch-box-input:checked:not(:disabled) ~ .switch-box-slider:after {
+    background: #2ecc71;
+}
+
+.container {   
+   width: 200px;
+   margin: 30px auto;
+}
+/*点赞*/
+.islike{
+    float: right;
+    display: inline-block;
+    line-height: 30px;
+    padding: 0 5px;
+    vertical-align: middle;
+    color: #333
+}
+.islike a{
+    color: #3a3838;
+text-decoration: none;
+}
+.isdone{
+    color: #ed9c28;
+}
+.evaluateSelect{
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #C0C0C0;
+}
+.comment-box {
+padding: 15px 0px;
+overflow: hidden;
+margin-left: 20px;
+}
+.comment-txt {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #DDD;
+    overflow: hidden;
+    word-wrap: break-word;
+    resize: none;
+    padding: 5px 10px;
+    line-height: 24px;
+    font-size: 13px;
+    color: #333;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+.comment-box-btn {
+margin: 10px 0;
+overflow: hidden;
+}
+.comment-btn, .ask-btn-submitq {
+display: inline-block;
+width: 60px;
+line-height: 28px;
+background: #fe6a00;
+border: 1px solid #fe6a00;
+color: #FFF;
+text-align: center;
+cursor: pointer;
+font-size: 12px;
+border-radius: 4px;
+}
+#evaluate_title{
+color: 	#686868;
+}
+.content_1{
+color: 	#686868;
+margin-left: 15px;
+}
+/*点赞结束*/
+/** 试运行 */
+a.tryrun.btn {
+margin-bottom: 10px;
+display: inline-block;
+color: #FFF;
+background-color: #AE4141;
+border-color: #AE4141;
+font-weight: 400;
+text-align: center;
+vertical-align: middle;
+cursor: pointer;
+border: 1px solid transparent;
+white-space: nowrap;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.42857;
+text-decoration: none;
+border-radius: 4px;
+}
+
+a.tryrun.btn:hover {
+background-color: #ff0000;
+border-color: #ff0000;
+}
+.editormd-preview-container pre code {
+color: #333;
+}
+.editormd-preview-container pre{
+background: #201e2f !important;
+}
+
+/*点赞*/
+.islike{
+    float: right;
+    display: inline-block;
+    line-height: 30px;
+    padding: 0 5px;
+    vertical-align: middle;
+    color: #333
+}
+.islike a{
+    color: #3a3838;
+text-decoration: none;
+}
+.isdone{
+    color: #ed9c28;
+}
+
+.evaluateSelect{
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #C0C0C0;
+}
+.comment-box {
+padding: 15px 0px;
+overflow: hidden;
+margin-left: 20px;
+}
+.comment-txt {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #DDD;
+    overflow: hidden;
+    word-wrap: break-word;
+    resize: none;
+    padding: 5px 10px;
+    line-height: 24px;
+    font-size: 13px;
+    color: #333;
+    box-sizing: border-box;
+}
+.comment-box-btn {
+margin: 10px 0;
+overflow: hidden;
+}
+.comment-btn, .ask-btn-submitq {
+display: inline-block;
+width: 60px;
+line-height: 28px;
+background: #fe6a00;
+border: 1px solid #fe6a00;
+color: #FFF;
+text-align: center;
+cursor: pointer;
+font-size: 12px;
+border-radius: 4px;
+}
+#evaluate_title{
+color: 	#686868;
+}
+.content_1{
+color: 	#686868;
+margin-left: 15px;
+}
+
+/*点赞结束*/
+
+/* 微信登录框 */
+.modal-mask, .modal-wrap { position: fixed; top: 0; left: 0; right: 0; bottom: 0; }
+.modal-mask { z-index: 1998; background-color: rgba(0, 0, 0, .45); }
+.modal-wrap { z-index: 1999; }
+
+.modal { position: relative; top: 100px; width: 520px; margin: 0 auto; border-top: 2px solid #fe6a00; border-radius: 3px; background-color: #fff; line-height: 1.5; }
+.modal-close { position: absolute; top: 14px; right: 12px; color: #999; cursor: pointer; transition: color .24s; }
+.modal-close > .i-icon { font-size: 21px; vertical-align: top; }
+.modal-close:hover { color: #444; }
+.modal-header { padding: 14px 16px; border-bottom: 1px solid #e8eaec; color: #17233d; font-size: 16px; font-weight: 700; line-height: 21px; }
+.modal-body { padding: 16px; font-size: 14px; }
+.modal-footer { padding: 12px 18px; border-top: 1px solid #e8eaec; text-align: right; }
+.modal-footer .modal-btn { height: 32px; padding: 0 15px; border-radius: 4px; color: #fff; font-size: 14px; cursor: pointer; -webkit-transition: all .24s; transition: all .24s; }
+
+.modal-footer .modal-btn-primary { background-color: #fe6a00; border: 1px solid #fe6a00; }
+.modal-footer .modal-btn-primary:hover { background-color: #fea400; border-color: #fea400; }
+
+@media (max-width: 576px) {
+    .modal { width: auto; margin: 0 10px; }
+}
+
+#wxlogin .modal-body { text-align: center; }
+#wxlogin .modal-body .qrcode { width: 430px; height: 430px; margin: 0 auto; }
+#wxlogin .modal-body .info { margin-top: 12px; }

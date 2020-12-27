@@ -1,0 +1,474 @@
+/**
+ * style-theme.css 视觉主题设置样式
+ * verson 0.0.1
+ */
+
+/*
+ * color-theme-sepia 护眼模式
+ */
+#full-height-container.color-theme-sepia,.color-theme-sepia .fixed-sidebar,.color-theme-sepia .splitter-sidebar,.color-theme-sepia .space-tools-section,.color-theme-sepia #pro-footer {
+  background-color: #222222;
+}
+.color-theme-sepia .sidebar-space-info a,.color-theme-sepia .page-sidebar-menu > li > a,.color-theme-sepia .s-footer-bottom a {
+  color: #a47537;
+}
+.color-theme-sepia .sidebar-menu a,.color-theme-sepia .sidebar-nav .treeth li a,.color-theme-sepia .dd-content a,.color-theme-sepia .sidebar-tree #kncollect li a,.color-theme-sepia .s-footer-bottom,.color-theme-sepia .sidebar-tree #kncollect li,.color-theme-sepia .sidebar-tree .searchresli,.color-theme-sepia .sidebar-tree .searchresli a {
+  color: #877f6a;
+}
+.color-theme-sepia .sidebar-nav {
+   border-bottom: 1px solid #7e888b;
+}
+.color-theme-sepia .sidebar-nav .treeth li.active a {
+  background: #222222;
+  color: #704214;
+  border: 1px solid #7e888b;
+  border-bottom-color: transparent;
+}
+.color-theme-sepia .fixed-sidebar a:hover,.color-theme-sepia .sidebar-nav .treeth li a:hover,.color-theme-sepia .sidebar-tree #kncollect li a:hover {
+  color: #704214;
+}
+.color-theme-sepia .left-drager {
+  border-left: 1px solid #7e888b;
+}
+.color-theme-sepia .dd-content.active {
+  background-color: rgb(0,0,0.5);
+}
+.color-theme-sepia .dd-content.active a,.color-theme-sepia .dd-content a:hover {
+  color: #704214;
+}
+.color-theme-sepia .space-tools-section {
+  border-top: 1px solid #7e888b;
+}
+.color-theme-sepia #pro-mian {
+  background-color: #fffae8;
+  color: #505050;
+  border-bottom: 1px solid #7e888b;
+}
+.color-theme-sepia .pro-title {
+  background-color: #fffae8;
+  color: #555;
+}
+.color-theme-sepia .set-btn-group a,.color-theme-sepia .kn-btn-group a,.color-theme-sepia .kn-btn-group .viewcount-btn {
+  color: #704214;
+}
+.color-theme-sepia .set-btn-group a:hover,.color-theme-sepia .kn-btn-group a:hover {
+  color: #f89135;
+}
+/* theme1设置 */
+.color-theme-sepia .set-dropdown-menu {
+  background-color: #222222;
+  border-color: #7e888b;
+}
+.color-theme-sepia .set-dropdown-menu .dropdown-caret .caret-inner {
+  border-bottom: 9px solid #222222;
+}
+.color-theme-sepia .set-dropdown-menu .buttons {
+  border-color: #7e888b;
+}
+.color-theme-sepia .set-dropdown-menu .button {
+  color: #afa790;
+}
+.color-theme-sepia .set-dropdown-menu .button:hover {
+  color: #73553c;
+}
+.color-theme-sepia .pro-title .dropdown-menu {
+  background-color: #222222;
+  border: 1px solid #7e888b;
+}
+.color-theme-sepia .pro-title .dropdown-menu a {
+  background-color: #222222;
+  color: #afa790;
+}
+.color-theme-sepia .pro-title .dropdown-menu a:hover {
+  color: #73553c;
+}
+/* 内容 */
+.color-theme-sepia .content-intro {
+  background-color: #fffae8;
+}
+.color-theme-sepia .content-top h1,.color-theme-sepia .content-intro h1,.color-theme-sepia .content-intro h2,.color-theme-sepia .content-intro h3,.color-theme-sepia .content-intro h4,.color-theme-sepia .content-intro h5,.color-theme-sepia .content-intro h6 {
+  color: #383838;
+}
+.color-theme-sepia .content-intro,.color-theme-sepia .content-intro p,.color-theme-sepia #evaluates,.color-theme-sepia .project-maylike-info {
+  color: #505050;
+}
+.color-theme-sepia .kn-infomation,.color-theme-sepia .content-intro a,.color-theme-sepia .previous-link a,.color-theme-sepia .next-link a,.color-theme-sepia .content-intro table a,.color-theme-sepia .project-maylike-ul li a {
+  color: #704214;
+}
+.color-theme-sepia .content-intro a:hover,.color-theme-sepia .previous-link a:hover,.color-theme-sepia .next-link a:hover,.color-theme-sepia .content-intro table a:hover,.color-theme-sepia .project-maylike-ul li a:hover {
+  color: #f89135;
+}
+.color-theme-sepia .content-intro hr,.color-theme-sepia .project-operation {
+  border-top: 1px solid #ccc;
+}
+.color-theme-sepia .markdown-body h2,.color-theme-sepia .markdown-body h2 {
+  border-bottom: 1px solid #ccc;
+}
+.color-theme-sepia .content-intro .example {
+  background: #fbeecb;
+  border: 1px solid #faebcc;
+  color: #505050;
+}
+.color-theme-sepia .content-intro h2.example, .color-theme-sepia .content-intro h2.example_head {
+  color: #704214;
+  border: 1px solid transparent;
+}
+.color-theme-sepia .content-intro .example_code,.color-theme-sepia .content-intro .example_result {
+  background-color: #fffae8;
+  border: 1px solid transparent;
+}
+.color-theme-sepia .content-intro .example_code span.marked {
+  color: #505050;
+}
+.color-theme-sepia .content-intro a.tryitbtn,.color-theme-sepia .content-intro a.showbtn,.color-theme-sepia .content-intro a.playitbtn {
+  background-color: #f0ad4e;
+}
+.color-theme-sepia .content-intro a.tryitbtn:hover,.color-theme-sepia .content-intro a.showbtn:hover,.color-theme-sepia .content-intro a.playitbtn:hover {
+  background-color: #ed9c28;
+  color: #fff;
+  text-decoration: none;
+}
+.color-theme-sepia .content-intro code {
+  background: #fbeecb;
+  color: #505050;
+}
+.color-theme-sepia .content-intro blockquote {
+  background: #fbeecb;
+  color: #505050;
+  border-left: 5px solid #f5d06c;
+}
+.color-theme-sepia .content-intro .btn-info {
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+.color-theme-sepia .content-intro .btn-info:hover {
+    background-color: #ed9c28;
+    border-color: #d58512;
+    text-decoration: none;
+}
+.color-theme-sepia .content-intro table thead,.color-theme-sepia .content-intro table th {
+  background-color: #f0ad4e;
+}
+.color-theme-sepia .content-intro table th,.color-theme-sepia .content-intro table td,.color-theme-sepia .content-intro table.reference td {
+  border: 1px solid #f5d06c;
+}
+.color-theme-sepia .content-intro table tr:nth-child(2n),.color-theme-sepia .content-intro table.reference tr:nth-child(2n) {
+    background-color: #fffae8;
+}
+.color-theme-sepia .content-intro table tr:nth-child(2n+1),.color-theme-sepia .content-intro table.reference tr:nth-child(2n+1) {
+    background-color: #fbeecb;
+}
+.color-theme-sepia .content-intro table.reference th {
+    background-color: #f0ad4e;
+    border: 1px solid #f5d06c;
+    color: #704214;
+}
+.color-theme-sepia .content-intro table.lamp {
+    border: 1px solid #f5d06c;
+}
+.color-theme-sepia .content-intro table.lamp th,.color-theme-sepia .content-intro table.lamp td {
+   background: #fbeecb;
+   border: 1px solid #fbeecb;
+}
+/* 赞赏、其它操作 */
+.color-theme-sepia .project-sq,.color-theme-sepia .project-operation .op-btn {
+  background-color: #fbeecb;
+  border: 1px solid #faebcc;
+}
+.color-theme-sepia .project-sq-info {
+  color: #383838;
+}
+.color-theme-sepia .project-sq-btnarea a {
+  background-color: #f0ad4e;
+  border: 1px solid #eea236;
+}
+.color-theme-sepia .project-sq-btnarea a:hover {
+  background-color: #ed9c28;
+  border: 1px solid #d58512;
+}
+/* 其它 */
+.color-theme-sepia .project-operation .op-btn {
+   color: #505050;
+}
+.color-theme-sepia .project-operation .op-btn:hover {
+   color: #383838;
+}
+.color-theme-sepia .project-operation .op-btn i {
+   color: #704214;
+}
+/* 左右翻页 */
+.color-theme-sepia .navigation-box .navigation {
+  color: #afa790;
+}
+.color-theme-sepia .navigation-box .navigation:hover {
+  color: #73553c;
+}
+/* 封面页 */
+.color-theme-sepia .main-container .coverimg a,.color-theme-sepia .main-container .coverinfo h1,.color-theme-sepia .coverinfo .creatorarea a,.color-theme-sepia .main-container .project-desc2 .ask-btn {
+  color: #704214;
+}
+.color-theme-sepia .main-container .coverimg a:hover,.color-theme-sepia .coverinfo .creatorarea a:hover,.color-theme-sepia .main-container .project-desc2 .ask-btn:hover {
+  color: #f89135;
+}
+.color-theme-sepia .main-container .project-desc2 h3,.color-theme-sepia .main-container .project-desc2 .portlet-body li a {
+  color: #383838;
+}
+
+/*
+ * color-theme-night 夜间模式
+ */
+#full-height-container.color-theme-night,.color-theme-night .fixed-sidebar,.color-theme-night .splitter-sidebar,.color-theme-night .space-tools-section,.color-theme-night #pro-footer {
+  background: #2d3143;
+}
+.color-theme-night .sidebar-space-info a,.color-theme-night .page-sidebar-menu > li > a,.color-theme-night .s-footer-bottom a {
+  color: #3eb1d0;
+}
+.color-theme-night .sidebar-menu a,.color-theme-night .sidebar-nav .treeth li a,.color-theme-night .dd-content a,.color-theme-night .sidebar-tree #kncollect li a,.color-theme-night .s-footer-bottom,.color-theme-night .sidebar-tree #kncollect li,.color-theme-night .sidebar-tree .searchresli,.color-theme-night .sidebar-tree .searchresli a {
+  color: #c1c6d7;
+}
+.color-theme-night .sidebar-nav {
+    border-bottom: 1px solid #272a3a;
+}
+.color-theme-night .sidebar-nav .treeth li.active a {
+  background: #2d3143;
+  color: #3eb1d0;
+  border: 1px solid #272a3a;
+  border-bottom-color: transparent;
+}
+.color-theme-night .fixed-sidebar a:hover,.color-theme-night .sidebar-nav .treeth li a:hover,.color-theme-night .sidebar-tree #kncollect li a:hover {
+  color: #f4f4f5;
+}
+.color-theme-night .left-drager {
+  border-left: 1px solid #272a3a;
+}
+.color-theme-night .dd-content.active {
+  background: #252737;
+}
+.color-theme-night .dd-content.active a,.color-theme-night .dd-content a:hover {
+    color: #f4f4f5;
+}
+.color-theme-night #pro-mian {
+  background: #1c1f2b;
+  color: #bdcadb;
+  border-bottom: 1px solid #272a3a;
+}
+.color-theme-night .pro-title {
+  background: #1c1f2b;
+  color: #7e888b;
+}
+.color-theme-night .set-btn-group a,.color-theme-night .kn-btn-group a,.color-theme-night .kn-btn-group .viewcount-btn {
+  color: #9dbed8;
+}
+.color-theme-night .set-btn-group a:hover,.color-theme-night .kn-btn-group a:hover {
+  color: #fffff5;
+}
+.color-theme-night .space-tools-section {
+  border-top: 1px solid #272a3a;
+}
+/* theme2设置 */
+.color-theme-night .set-dropdown-menu {
+  background-color: #2d3143;
+  border-color: #272a3a;
+}
+.color-theme-night .set-dropdown-menu .dropdown-caret .caret-inner {
+  border-bottom: 9px solid #2d3143;
+}
+.color-theme-night .set-dropdown-menu .buttons {
+  border-color: #272a3a;
+}
+.color-theme-night .set-dropdown-menu .button {
+  color: #62677f;
+}
+.color-theme-night .set-dropdown-menu .button:hover {
+  color: #f4f4f5;
+}
+.color-theme-night .pro-title .dropdown-menu {
+  background-color: #2d3143;
+  border: 1px solid #272a3a;
+}
+.color-theme-night .pro-title .dropdown-menu a {
+  background-color: #2d3143;
+  color: #62677f;
+}
+.color-theme-night .pro-title .dropdown-menu a:hover {
+  color: #f4f4f5;
+}
+/* 内容 */
+.color-theme-night .content-intro {
+  background: #1c1f2b;
+}
+.color-theme-night .content-intro,.color-theme-night .content-intro p,.color-theme-night #evaluates,.color-theme-night .project-maylike-info {
+  color: #bdcadb;
+}
+.color-theme-night .content-top h1,.color-theme-night .content-intro h1,.color-theme-night .content-intro h2,.color-theme-night .content-intro h3,.color-theme-night .content-intro h4,.color-theme-night .content-intro h5,.color-theme-night .content-intro h6 {
+  color: #fffffa;
+}
+.color-theme-night .content-intro img {
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.color-theme-night .kn-infomation,.color-theme-night .previous-link,.color-theme-night .next-link {
+  color: #9dbed8;
+}
+.color-theme-night .content-intro a,.color-theme-night .previous-link a,.color-theme-night .next-link a,.color-theme-night .content-intro table a,.color-theme-night .project-maylike-ul li a {
+  color: #3eb1d0;
+}
+.color-theme-night .content-intro a:hover,.color-theme-night .previous-link a:hover,.color-theme-night .next-link a:hover,.color-theme-night .content-intro table a:hover,.color-theme-night .project-maylike-ul li a:hover {
+  color: #269abc;
+}
+.color-theme-night .content-intro hr,.color-theme-night .project-operation {
+  border-top: 1px solid #272a3a;
+}
+.color-theme-night .markdown-body h2,.color-theme-night .markdown-body h2 {
+  border-bottom: 1px solid #272a3a;
+}
+.color-theme-night .content-intro .example {
+  background: #2d3143;;
+  border: 1px solid #2d3143;
+  color: #9dbed8;
+}
+.color-theme-night .content-intro h2.example, .color-theme-night .content-intro h2.example_head {
+  color: #fffffa;
+}
+.color-theme-night .content-intro .example_code,.color-theme-night .content-intro .example_result {
+  border: 1px solid transparent;
+}
+.color-theme-night .content-intro .example_code {
+  background-color: #1c1f2b;
+}
+.color-theme-night .content-intro .example_code span.marked {
+  color: #9dbed8;
+}
+.color-theme-night .content-intro a.tryitbtn,.color-theme-night .content-intro a.showbtn,.color-theme-night .content-intro a.playitbtn {
+  background-color: #5bc0de;
+}
+.color-theme-night .content-intro a.tryitbtn:hover,.color-theme-night .content-intro a.showbtn:hover,.color-theme-night .content-intro a.playitbtn:hover {
+  background-color: #39b3d7;
+  color: #fff;
+  text-decoration: none;
+}
+.color-theme-night .content-intro code {
+  background: #2d3143 !important;
+  color: #9dbed8;
+}
+.color-theme-night .content-intro blockquote {
+  background: #2d3143;
+  color: #9dbed8;
+  border-left: 5px solid #3b3f54;
+}
+.color-theme-night .content-intro .btn-info {
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+.color-theme-night .content-intro .btn-info:hover {
+    background-color: #39b3d7;
+    border-color: #269abc;
+    text-decoration: none;
+}
+.color-theme-night .content-intro pre,.color-theme-night .content-intro .code {
+  background: #2d3143;
+  border: 1px solid #2d3143;
+}
+.color-theme-night .content-intro table thead,.color-theme-night .content-intro table th {
+  background-color: #1c1f2b;
+}
+.color-theme-night .content-intro table th,.color-theme-night .content-intro table td,.color-theme-night .content-intro table.reference td {
+  border: 1px solid #3b3f54;
+}
+.color-theme-night .content-intro table tr:nth-child(2n),.color-theme-night .content-intro table.reference tr:nth-child(2n) {
+    background-color: #35394b;
+}
+.color-theme-night .content-intro table tr:nth-child(2n+1),.color-theme-night .content-intro table.reference tr:nth-child(2n+1) {
+    background-color: #1c1f2b;
+}
+.color-theme-night .content-intro table.reference th {
+    background-color: #2d3143;
+    border: 1px solid #3b3f54;
+    color: #f4f4f5;
+}
+.color-theme-night .content-intro table.lamp {
+    border: 1px solid #272a3a;
+}
+.color-theme-night .content-intro table.lamp th,.color-theme-night .content-intro table.lamp td {
+   background-color: #252737;
+   border: 1px solid #272a3a;
+}
+/* 赞赏、其它操作 */
+.color-theme-night .project-sq,.color-theme-night .project-operation .op-btn {
+  background-color: #252737;
+  border: 1px solid #272a3a;
+}
+.color-theme-night .project-sq-info {
+  color: #f4f4f5;
+}
+.color-theme-night .project-sq-btnarea a {
+  background-color: #5bc0de;
+  border: 1px solid #46b8da;
+}
+.color-theme-night .project-sq-btnarea a:hover {
+  background-color: #39b3d7;
+  border: 1px solid #269abc;
+}
+/* 其它操作*/
+.color-theme-night .project-operation .op-btn {
+    color: #c1c6d7;
+}
+.color-theme-night .project-operation .op-btn:hover {
+    color: #f4f4f5;
+}
+.color-theme-night .project-operation .op-btn i {
+    color: #3eb1d0;
+}
+/* 左右翻页 */
+.color-theme-night .navigation-box .navigation {
+  color: #383f52;
+}
+.color-theme-night .navigation-box .navigation:hover {
+  color: #fffff5;
+}
+/* 封面页 */
+.color-theme-night .main-container .coverimg img {
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.color-theme-night .main-container .coverimg a,.color-theme-night .main-container .coverinfo h1,.color-theme-night .coverinfo .creatorarea a,.color-theme-night .main-container .project-desc2 .ask-btn {
+   color: #3eb1d0;
+}
+.color-theme-night .main-container .coverimg a:hover,.color-theme-night .coverinfo .creatorarea a:hover,.color-theme-night .main-container .project-desc2 .ask-btn:hover {
+  color: #269abc;
+}
+.color-theme-night .main-container .project-desc2 h3,.color-theme-night .main-container .project-desc2 .portlet-body li a {
+   color: #fffffa;
+}
+.color-theme-night .coverinfo .content-btn-group a,.color-theme-night .coverinfo .content-head-viewcount,.color-theme-night .sidebar-box .nav1 a {
+   color: #bdcadb;
+}
+#full-height-container.color-theme-night .main-container .project-desc,#full-height-container.color-theme-night .main-container .project-desc2 {
+  border-top: 1px solid #272a3a;
+}
+.color-theme-night .sidebar-box {
+  background: #1c1f2b;
+  border: 1px solid #272a3a;
+}
+.color-theme-night #course {
+  background: #2d3143;
+}
+.color-theme-night .sidebar-box li {
+  border-bottom: 1px solid #272a3a;
+}
+.color-theme-night .sidebar-box .li1:hover {
+    background: #252737;
+}
+.color-theme-night .sidebar-box .li1:hover .nav2 {
+    background: #2d3143;
+}
+
+/* 字体大小设置 */
+.font1 .content-intro * {
+    font-size: 1.0rem !important;
+}
+.font2 .content-intro * {
+    font-size: 1.1rem !important;
+}
