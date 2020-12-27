@@ -18,15 +18,8 @@ func (r *RpcMethodController) Post() {
 		fmt.Println(err.Error())
 		return
 	}
-
-	temp := []string{}
-	//对params中不同数据进行分类
-	for i := 0; i < len(RpcJson.Params) ; i++ {
-		temp[i] = RpcJson.Params[i].(string)
-	}
-	fmt.Println(temp)
-	rpcJson := rpcUtils.RPCToJSON(RpcJson.Method, temp)
-	RPCResult := rpcUtils.DoPost(rpcJson)
-	fmt.Println(RPCResult)
-	r.Ctx.WriteString("chengon")
+	RPCResult := rpcUtils.PRCMCTR(RpcJson.Method, RpcJson.Params)
+	RPCResultByte, _ := json.Marshal(RPCResult)
+	r.Data["json"] = string(RPCResultByte)
+	r.ServeJSON()
 }

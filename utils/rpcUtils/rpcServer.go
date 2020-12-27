@@ -4,6 +4,7 @@ package rpcUtils
 
 import (
 	"BWP/models/rpc"
+	"BWP/utils/itftc"
 	"encoding/json"
 	"github.com/astaxie/beego"
 	"io/ioutil"
@@ -14,13 +15,31 @@ import (
 )
 
 /**
+ * 启用BTCrpc服务获取一个RPCResult对象
+ *
+ *@param method bitcoin的调用方法
+ *@param params 调用方法时携带的参数
+ */
+func PRCMCTR(method string ,params []interface{}) rpc.RPCResult{
+	//判断该命令是否有参数
+	if params == nil {
+		jsondata := RPCToJSONNP(method)
+		return DoPost(jsondata)
+	}else {
+		t := itftc.InterfaceTypeClassification(params)
+		jsondata := RPCToJSONHP(method,t)
+		return DoPost(jsondata)
+	}
+}
+
+/**
  * JSON-RPC规范
  *
  *@param method bitcoin的调用方法
  *@param params 调用方法时携带的参数，可以不填
  *@return 返回的json数据作为请求主体
  */
-func RPCToJSON(method string, params ...interface{}) string {
+func RPCToJSON(method string, params []interface{}) string {
 	conf := beego.AppConfig
 
 	rpcjson := rpc.RpsJson{
@@ -35,6 +54,15 @@ func RPCToJSON(method string, params ...interface{}) string {
 	}
 	return string(rpcjsonbyte)
 }
+//有参数
+func RPCToJSONHP(method string, params []interface{}) string {
+	return RPCToJSON(method, params)
+}
+//无参数
+func RPCToJSONNP(method string, params ...interface{}) string {
+	return RPCToJSON(method, params)
+}
+
 
 //构建post请求
 //rpc_json为rpc_json规范的数据
